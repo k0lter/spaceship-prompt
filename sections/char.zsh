@@ -36,6 +36,8 @@ spaceship_char() {
 
   if [[ $UID -eq 0 ]]; then
     char="$SPACESHIP_CHAR_SYMBOL_ROOT"
+  else
+    char="$SPACESHIP_CHAR_SYMBOL"
   fi
 
   spaceship::section \
